@@ -30,6 +30,4 @@ public class TenantCapacityMapperByPostgresql extends BaseTenantCapacityMapper {
     public String getDataSource() {
         return DatabaseTypeConstant.POSTGRESQL;
     }
-    
-    
 }

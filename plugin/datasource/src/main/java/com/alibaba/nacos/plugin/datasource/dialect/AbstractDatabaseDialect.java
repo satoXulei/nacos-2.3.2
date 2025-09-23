@@ -51,7 +51,7 @@ public abstract class AbstractDatabaseDialect implements DatabaseDialect {
     }
     
     @Override
-    public String getLimitPageSqlWithOffset(String sql, int startOffset, int pageSize){
+    public String getLimitPageSqlWithOffset(String sql, int startOffset, int pageSize) {
         return sql + "  LIMIT " + startOffset + " , " + pageSize;
     }
     

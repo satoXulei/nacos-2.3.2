@@ -45,7 +45,7 @@ public class PostgresqlDatabaseDialect extends AbstractDatabaseDialect {
     }
     
     @Override
-    public String getLimitPageSqlWithOffset(String sql, int startOffset, int pageSize){
+    public String getLimitPageSqlWithOffset(String sql, int startOffset, int pageSize) {
         return sql + "  OFFSET " + startOffset + " LIMIT " + pageSize;
     }
 
